@@ -1,2 +1,0 @@
-version,device name,recording time,platform,appVersion,device id,sensors,sampleRateMs
-3,moto g(100),2022-12-06_18-19-28,android,1.11.1,807427b5-88bd-456d-b801-774a166f4a50,Accelerometer|Gravity|Gyroscope|Orientation|Magnetometer|Location|Microphone|Light|Annotation|TotalAcceleration|MagnetometerUncalibrated|GyroscopeUncalibrated|AccelerometerUncalibrated,10|10|10|10|10|0|100|0||10|10|10|10
