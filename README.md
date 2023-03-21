@@ -17,37 +17,3 @@ For each record in the dataset, the following is provided:
 3. Triaxial magnetometer
 4. Its activity label.
 5. An identifier of the subject who experimented.
-
-
-## Prove Data
-
-The Jupyter Notebook "AnalysisData.ipynb" can be used to visualize the data.
-It reads in the data of one participant and shows all physiological sensor data separately.
-This offers the opportunity to prove whether the data was correctly measured or not.
-
-### Preprocessing
-
-In the preprocessing, the data will be prepared for machine learning afterwards.
-
-**Order for Preprocessing**:
-1. Preprocessing_robotlogs.ipynb
-   1. Create a merged log-file containing all triggers (gestures and speech) and change the time format to [ms].
-2. Preprocessing_time.ipynb
-   1. Changes the time format for e4 data to be in [ms] and removes the offset between NTP-Server and Wristband.
-   2. Defines the baseline measurements in tag files.
-   3. Offers to calculate the robots' speech time.
-3. Preprocessing_questionnaire.ipynb
-   1. Prepares the questionnaires to be used for labelling the data. - only affect information is used.
-4. Preprocessing_labelData.ipynb
-   1. Merge the merged robot log files with the questionnaire information.
-   2. Merge the tag files.
-   3. Merge sensors data with the ground_truth.
-   4. Convert all csv file encoding to utf-8.
-
-! After preprocessing, all files contain timestamps in milliseconds!
-
-### Statistics
-
-Evaluating dataset based on the GARAFED method, can be done by modifying the parameters in the data variable inside GARAFFED Radar Viz.html using text editor, then annotating the parameters using the drawio file.
-
-### Machine Learning
